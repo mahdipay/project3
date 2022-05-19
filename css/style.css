@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 body
 {
@@ -91,18 +91,127 @@ nav li{
     flex-direction: column;
     
 }
+.slider-text h3{
+    font-size: 10vw;
+    font-weight: 400;
+    color: white;
+    line-height: 10vw;
+}
+.slider-text p{
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
+}
+.slider-btn{
+    font-size: 1.7vw;
+    border: 0;
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 1vw 1.5vw;
+    color: white;
+    transition: 0.3s;
+}
+.slider-btn:hover{
+    background-color: red;
+    color: white;
 
+}
+.search-bar{
+    background-color: rgb(14, 8, 8);
+    flex-direction: column;
+    padding: 20px 25px;
+    align-items:center;
+    
+}
+.search-bar h3{
+    color: white;
+}
+.search-form{
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+input{
+    background-color: transparent;
+    border: 1px solid #363e52;
+    border-radius: 5px;
+    margin: 10px 10px;
+    padding: 17px 50px;
+    color: white;
+    outline: none;
+    width: 100%;
+}
+.search-btn{
+    color: white;
+    padding: 17px 39px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: red;
+}
+.search-btn:hover{
+    background-color: #1ec6b6;
+    color: white!important;
 
+}
+.search-bar h3{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.popular-heading
+{
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    text-align: center;
+}
+.popular-title{
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    margin: 10px;
+}
+.popular-description
+{
+    font-size: 16px;
+    color: grey;
+    font-weight: 400;
+    line-height: 30px;
 
-
-
-
-
-
-
-
-
-
+}
+.popular-container{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+article img{
+    height: 280px;
+    margin-bottom: 20px
+}
+.popular-container article{
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.7s;
+}
+.popular-container article:hover{
+    transform: translateY(-10px);
+}
+.popular-container article:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(4, 14, 39, 0) 0%, rgba(4, 14, 39, 0.7) 100%);
+    content: '';
+    width: 100%;
+    height: 88%;
+    z-index: 1000;
+    border-radius: 5px;
+}
 
 
 
